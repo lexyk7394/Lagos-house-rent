@@ -18,4 +18,4 @@ if st.button("Predict Price"):
     # Find the numeric code from the original encoder
     loc_code = list(le.classes_).index(location)
     prediction = model.predict([[bedrooms, loc_code, 0]])[0]
-    [st.success(f"Estimated Yearly Rent: ₦{float(prediction):,.2f}")
+    st.success(f"Estimated Yearly Rent: ₦{float(prediction):,.2f}")
